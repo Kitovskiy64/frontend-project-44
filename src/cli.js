@@ -1,11 +1,10 @@
 /* eslint-disable no-console */
 import readLineSync from 'readline-sync';
 
-function greetUser() {
-  const name = readLineSync.question('May I have your name? ');
-  // eslint-disable-next-line no-useless-concat
-  console.log('Hello' + `, ${name}!`);
-}
+const greetUser = () => {
+  const name = readLineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
+  console.log(`'Hello, ${name}!`);
+  return name;
+};
 
-// eslint-disable-next-line import/prefer-default-export
-export { greetUser };
+export default greetUser;
