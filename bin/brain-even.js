@@ -1,5 +1,5 @@
-import { greetUser } from '../src/cli.js';
-import { evenGame } from '../src/evenGame.js';
+import greetUser from '../../src/cli';
+import evenGame from '../src/evenGame';
 
 const name = greetUser();
 

@@ -1,7 +1,7 @@
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-console */
 import readLineSync from 'readline-sync';
-import { greetUser } from './cli';
+import greetUser from './cli';
 
 const evenNumber = (num) => {
   if (num % 2 === 0) {
