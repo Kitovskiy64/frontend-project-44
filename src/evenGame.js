@@ -1,7 +1,7 @@
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-console */
 import readLineSync from 'readline-sync';
-import greetUser from './cli';
+// eslint-disable-next-line import/extensions
 
 const evenNumber = (num) => {
   if (num % 2 === 0) {
@@ -10,7 +10,6 @@ const evenNumber = (num) => {
   return false;
 };
 const evenGame = (name) => {
-  greetUser();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctAnswersCount = 0;
 
@@ -29,7 +28,7 @@ const evenGame = (name) => {
       return;
     }
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default evenGame;
