@@ -15,3 +15,6 @@
 | Ссылка на аксинему brain calc game |
 | https://asciinema.org/a/V2H4K4bPoDaiP10S8rHWDggMU |
 | |
+| Ссылка на аксинему brain gcd game |
+| https://asciinema.org/a/uiXH2e7VpLS3BLqDmNeUBJm0D |
+| |
