@@ -18,3 +18,6 @@
 | Ссылка на аксинему brain gcd game |
 | https://asciinema.org/a/uiXH2e7VpLS3BLqDmNeUBJm0D |
 | |
+| Ссылка на аксинему brain prog game |
+| https://asciinema.org/a/VjJcoyQGFKbZusVVFx9Mnd4iG |
+| |
