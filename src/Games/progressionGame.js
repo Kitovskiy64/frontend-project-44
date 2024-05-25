@@ -3,7 +3,7 @@
 import readLineSync from 'readline-sync';
 // eslint-disable-next-line import/extensions
 
-const randomNumber = () => Math.floor(Math.random() * 100) + 1;
+const randomNumber = () => Math.floor(Math.random() * 10) + 1;
 
 const progLogic = () => {
   const startNumber = randomNumber();
