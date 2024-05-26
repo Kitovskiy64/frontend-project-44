@@ -17,12 +17,12 @@ const evenGame = (name) => {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readLineSync.question('Your answer: ');
+    const correctAnswer = evenNumber(randomNumber) ? 'yes' : 'no';
 
     if ((evenNumber(randomNumber) && userAnswer === 'yes' || (!evenNumber(randomNumber) && userAnswer === 'no'))) {
       console.log('Correct!');
       correctAnswersCount += 1;
     } else {
-      const correctAnswer = evenNumber(randomNumber) ? 'yes' : 'no';
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}`);
       return;
