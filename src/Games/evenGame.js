@@ -17,8 +17,12 @@ const evenGame = (name) => {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readLineSync.question('Your answer: ');
-    const correctAnswer = evenNumber(randomNumber) ? 'yes' : 'no';
-
+    let correctAnswer;
+    if (evenNumber(randomNumber)) {
+      correctAnswer = 'yes';
+    } else {
+      correctAnswer = 'no';
+    }
     if ((evenNumber(randomNumber) && userAnswer === 'yes' || (!evenNumber(randomNumber) && userAnswer === 'no'))) {
       console.log('Correct!');
       correctAnswersCount += 1;

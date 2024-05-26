@@ -26,7 +26,12 @@ const primeGame = (name) => {
     const randomNum = randomNumber(100);
     console.log(`Question: ${randomNum}`);
     const userAnswer = readLineSync.question('Your answer: ');
-    const correctAnswer = primeNum(randomNum) ? 'yes' : 'no';
+    let correctAnswer;
+    if (evenNumber(randomNumber)) {
+      correctAnswer = 'yes';
+    } else {
+      correctAnswer = 'no';
+    }
     if (correctAnswer === 'yes' && userAnswer === 'yes' || (correctAnswer === 'no' && userAnswer === 'no')) {
       console.log('Correct!');
       correctAnswersCount += 1;
