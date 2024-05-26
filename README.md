@@ -21,3 +21,5 @@
 | Ссылка на аксинему brain prog game |
 | https://asciinema.org/a/VjJcoyQGFKbZusVVFx9Mnd4iG |
 | |
+| Ссылка на аксинему brain prime game |
+| https://asciinema.org/a/2XybdT0qyOSKWtKvRQLRWWVDG |
