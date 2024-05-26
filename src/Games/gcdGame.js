@@ -8,7 +8,9 @@ const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 const gcdLogic = (a, b) => {
   while (b !== 0) {
     const temp = b;
+    // eslint-disable-next-line no-param-reassign
     b = a % b;
+    // eslint-disable-next-line no-param-reassign
     a = temp;
   }
   return a;

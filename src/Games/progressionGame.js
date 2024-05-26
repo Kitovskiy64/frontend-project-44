@@ -12,6 +12,7 @@ const progLogic = () => {
   const progression = [];
   let currentNum = startNumber;
 
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < progLength; i++) {
     progression.push(currentNum);
     currentNum += progStep;
