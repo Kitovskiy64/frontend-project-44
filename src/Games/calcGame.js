@@ -38,6 +38,7 @@ const calcGame = (name) => {
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctOperation}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }

@@ -37,6 +37,7 @@ const progGame = (name) => {
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${hiddenNumber}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
