@@ -27,7 +27,7 @@ const primeGame = (name) => {
     console.log(`Question: ${randomNum}`);
     const userAnswer = readLineSync.question('Your answer: ');
     let correctAnswer;
-    if (evenNumber(randomNumber)) {
+    if (primeNum(randomNum)) {
       correctAnswer = 'yes';
     } else {
       correctAnswer = 'no';
