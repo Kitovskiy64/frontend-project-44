@@ -29,7 +29,7 @@ const progGame = (name) => {
 
   while (correctAnswersCount < 3) {
     const { progression, hiddenNumber } = progLogic();
-    console.log(`Question: ${progression.join('  ')}`);
+    console.log(`Question: ${progression.join(' ')}`);
     const userAnswer = readLineSync.question('Your answer: ');
 
     if (+userAnswer === hiddenNumber) {
