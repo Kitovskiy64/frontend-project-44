@@ -1,3 +1,13 @@
 {
-  "extends": "airbnb-base"
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "no-mixed-operators": "off",
+    "import/extensions": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "no-plusplus": "off"
+  }
 }
+
