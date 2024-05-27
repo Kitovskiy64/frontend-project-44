@@ -20,7 +20,7 @@ const evenGame = (name) => {
     } else {
       correctAnswer = 'no';
     }
-    if ((isEvenNumber(randomNumber) && userAnswer === 'yes' || (!isEvenNumber(randomNumber) && userAnswer === 'no'))) {
+    if ((isEvenNumber(randomNumber) && userAnswer === 'yes') || (!isEvenNumber(randomNumber) && userAnswer === 'no')) {
       console.log('Correct!');
       correctAnswersCount += 1;
     } else {

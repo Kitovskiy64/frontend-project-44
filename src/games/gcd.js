@@ -3,12 +3,14 @@ import readLineSync from 'readline-sync';
 const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const gcdLogic = (a, b) => {
+  let x = a;
+  let y = b;
   while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+    const temp = y;
+    y = x % y;
+    x = temp;
   }
-  return a;
+  return x;
 };
 
 const gcdGame = (name) => {
