@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import greetUser from '../src/Games/cli.js';
-import progGame from '../src/Games/progressionGame.js';
+import greetUser from '../src/cli.js';
+import progGame from '../src/games/progression.js';
 
 const name = greetUser();
 
