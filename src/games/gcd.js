@@ -5,8 +5,8 @@ const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 const gcdLogic = (a, b) => {
   while (b !== 0) {
     const temp = b;
-    const b = a % b;
-    const a = temp;
+    b = a % b;
+    a = temp;
   }
   return a;
 };
