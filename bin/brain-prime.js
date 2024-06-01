@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import greetUser from '../src/cli.js';
-import primeGame from '../src/games/prime.js';
+import playGame from '../src/engine.js';
+import { getPrimeGameDescription, generatePrimeRound } from '../src/games/prime.js';
 
 const name = greetUser();
-
-primeGame(name);
+playGame(getPrimeGameDescription, generatePrimeRound, name);

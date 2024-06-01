@@ -1,43 +1,12 @@
-import readLineSync from 'readline-sync';
+export const getProgressionGameDescription = () => 'What number is missing in the progression?';
 
-const randomNumber = () => Math.floor(Math.random() * 10) + 1;
-
-const progLogic = () => {
-  const startNumber = randomNumber();
-  const progLength = Math.floor(Math.random() * 6) + 5;
-  const progStep = Math.floor(Math.random() * 20) + 1;
-  const progression = [];
-  let currentNum = startNumber;
-
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < progLength; i++) {
-    progression.push(currentNum);
-    currentNum += progStep;
-  }
-  const hiddenIndex = Math.floor(Math.random() * progLength);
-  const hiddenNumber = progression[hiddenIndex];
+export const generateProgressionRound = () => {
+  const progressionLength = 10;
+  const start = Math.floor(Math.random() * 6) + 1;
+  const step = Math.floor(Math.random() * 20) + 1;
+  const hiddenIndex = Math.floor(Math.random() * progressionLength);
+  const progression = Array.from({ length: progressionLength }, (_, i) => start + i * step);
+  const correctAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';
-  return { progression, hiddenNumber };
+  return { question: progression.join(' '), correctAnswer };
 };
-
-const progGame = (name) => {
-  console.log('What number is missing in the progression?');
-  let correctAnswersCount = 0;
-
-  while (correctAnswersCount < 3) {
-    const { progression, hiddenNumber } = progLogic();
-    console.log(`Question: ${progression.join(' ')}`);
-    const userAnswer = readLineSync.question('Your answer: ');
-
-    if (+userAnswer === hiddenNumber) {
-      console.log('Correct!');
-      correctAnswersCount += 1;
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${hiddenNumber}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${name}!`);
-};
-export default progGame;

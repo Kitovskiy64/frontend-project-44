@@ -1,39 +1,15 @@
-import readLineSync from 'readline-sync';
-
-const randomNumber = () => Math.floor(Math.random() * 100) + 1;
-
-const gcdLogic = (a, b) => {
-  let x = a;
-  let y = b;
-  while (y !== 0) {
-    const temp = y;
-    y = x % y;
-    x = temp;
+const gcd = (a, b) => {
+  while (b !== 0) {
+    [a, b] = [b, a % b];
   }
-  return x;
+  return a;
 };
 
-const gcdGame = (name) => {
-  console.log('Find the greatest common divisor of given numbers.');
-  let correctAnswersCount = 0;
+export const getGcdGameDescription = () => 'Find the greatest common divisor of given numbers.';
 
-  while (correctAnswersCount < 3) {
-    const a = randomNumber();
-    const b = randomNumber();
-    const correctOperation = gcdLogic(a, b);
-    console.log(`Question: ${a} ${b}`);
-    const userAnswer = readLineSync.question('Your answer: ');
-
-    if (+userAnswer === correctOperation) {
-      console.log('Correct!');
-      correctAnswersCount += 1;
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctOperation}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${name}!`);
+export const generateGcdRound = () => {
+  const num1 = Math.floor(Math.random() * 100) + 1;
+  const num2 = Math.floor(Math.random() * 100) + 1;
+  const correctAnswer = gcd(num1, num2);
+  return { question: `${num1} ${num2}`, correctAnswer: String(correctAnswer) };
 };
-
-export default gcdGame;

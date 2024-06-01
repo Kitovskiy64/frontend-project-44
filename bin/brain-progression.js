@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 import greetUser from '../src/cli.js';
-import progGame from '../src/games/progression.js';
+import playGame from '../src/engine.js';
+import { getProgressionGameDescription, generateProgressionRound } from '../src/games/progression.js';
 
 const name = greetUser();
+playGame(getProgressionGameDescription, generateProgressionRound, name);
 
-progGame(name);
