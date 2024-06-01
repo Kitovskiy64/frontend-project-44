@@ -6,4 +6,3 @@ import { getGcdGameDescription, generateGcdRound } from '../src/games/gcd.js';
 
 const name = greetUser();
 playGame(getGcdGameDescription, generateGcdRound, name);
-

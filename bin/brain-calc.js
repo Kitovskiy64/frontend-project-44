@@ -6,4 +6,3 @@ import { getCalcGameDescription, generateCalcRound } from '../src/games/calc.js'
 
 const name = greetUser();
 playGame(getCalcGameDescription, generateCalcRound, name);
-

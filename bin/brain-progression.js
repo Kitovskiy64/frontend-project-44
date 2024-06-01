@@ -6,4 +6,3 @@ import { getProgressionGameDescription, generateProgressionRound } from '../src/
 
 const name = greetUser();
 playGame(getProgressionGameDescription, generateProgressionRound, name);
-

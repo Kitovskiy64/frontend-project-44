@@ -23,4 +23,3 @@ export const generateCalcRound = () => {
 
   return { question: `${num1} ${operation} ${num2}`, correctAnswer: String(correctAnswer) };
 };
-
