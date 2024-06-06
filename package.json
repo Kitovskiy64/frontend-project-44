@@ -10,7 +10,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "description": "[![Actions Status](https://github.com/Kitovskiy64/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kitovskiy64/frontend-project-44/actions)",
+  "description": "Brain Games is a set of console mini-games for training your mental abilities.",
   "author": "",
   "license": "ISC",
   "dependencies": {
