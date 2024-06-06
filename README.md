@@ -72,16 +72,16 @@ Correct!
 Congratulations, Sam!
 
 | Ссылка на аксинему brain even game |
-| https://asciinema.org/a/pVUn5wQYF8PGiZ6HHGw5ubrJl |
+[![asciicast](https://asciinema.org/a/I4TaaZ6IiwT0Ovh6Vc7qaWCRj.svg)](https://asciinema.org/a/I4TaaZ6IiwT0Ovh6Vc7qaWCRj)
 
 | Ссылка на аксинему brain calc game |
-| https://asciinema.org/a/V2H4K4bPoDaiP10S8rHWDggMU |
+[![asciicast](https://asciinema.org/a/IH63WxazMe4Pgzs3ISHCYWMuy.svg)](https://asciinema.org/a/IH63WxazMe4Pgzs3ISHCYWMuy)
 
 | Ссылка на аксинему brain gcd game |
-| https://asciinema.org/a/uiXH2e7VpLS3BLqDmNeUBJm0D |
+[![asciicast](https://asciinema.org/a/00N2ISayCGikIVeFfAYkE2MTK.svg)](https://asciinema.org/a/00N2ISayCGikIVeFfAYkE2MTK)
 
 | Ссылка на аксинему brain prog game |
-| https://asciinema.org/a/VjJcoyQGFKbZusVVFx9Mnd4iG |
+[![asciicast](https://asciinema.org/a/B5wafmLzXuFeeGEIsZxcR90V8.svg)](https://asciinema.org/a/B5wafmLzXuFeeGEIsZxcR90V8)
 
 | Ссылка на аксинему brain prime game |
-| https://asciinema.org/a/2XybdT0qyOSKWtKvRQLRWWVDG |
+[![asciicast](https://asciinema.org/a/RZC2vwxv44Mw2VkOS1PcUDiVe.svg)](https://asciinema.org/a/RZC2vwxv44Mw2VkOS1PcUDiVe)
