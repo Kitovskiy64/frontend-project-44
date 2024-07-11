@@ -1,4 +1,4 @@
-export const getCalcGameDescription = () => 'What is the result of the expression?';
+export const gameDescription = 'What is the result of the expression?';
 
 export const generateCalcRound = () => {
   const num1 = Math.floor(Math.random() * 100) + 1;

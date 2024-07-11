@@ -1,4 +1,4 @@
-export const getEvenGameDescription = () => 'Answer "yes" if the number is even, otherwise answer "no".';
+export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export const generateEvenRound = () => {
   const question = Math.floor(Math.random() * 100) + 1;

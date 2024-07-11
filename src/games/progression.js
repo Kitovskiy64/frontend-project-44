@@ -1,4 +1,4 @@
-export const getProgressionGameDescription = () => 'What number is missing in the progression?';
+export const gameDescription = 'What number is missing in the progression?';
 
 export const generateProgressionRound = () => {
   const progressionLength = 10;

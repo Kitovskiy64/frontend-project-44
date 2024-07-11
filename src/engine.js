@@ -9,7 +9,7 @@ const playGame = (getGameDescription, generateRound) => {
   };
 
   const name = greetUser();
-  console.log(getGameDescription());
+  console.log(gameDescription);
 
   let correctAnswersCount = 0;
   const rounds = 3;

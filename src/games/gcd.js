@@ -9,7 +9,7 @@ const gcd = (num1, num2) => {
   return a;
 };
 
-export const getGcdGameDescription = () => 'Find the greatest common divisor of given numbers.';
+export const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 export const generateGcdRound = () => {
   const num1 = Math.floor(Math.random() * 100) + 1;
