@@ -2,9 +2,4 @@ node_modules/
 *.cast
 *.tmp
 .vscode/
-src/demo.cast
-src/brain-even
-src/brain-calc
-src/brain-progression
-src/brain-prime
-src/brain-gcd
+.dev/
