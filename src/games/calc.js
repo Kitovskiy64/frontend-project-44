@@ -18,7 +18,7 @@ export const generateCalcRound = () => {
       correctAnswer = num1 * num2;
       break;
     default:
-      return NaN;
+      throw new Error(`Unknown operator: ${operation}`);
   }
 
   return { question: `${num1} ${operation} ${num2}`, correctAnswer: String(correctAnswer) };
