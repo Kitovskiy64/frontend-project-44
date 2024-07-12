@@ -1,4 +1,4 @@
-import { generateNumber } from '../utils.js';
+import { generateNumber } from '../cli.js';
 
 export const gameDescription = 'Find the greatest common divisor of given numbers.';
 
