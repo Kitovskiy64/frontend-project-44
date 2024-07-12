@@ -9,11 +9,13 @@ const gcd = (num1, num2) => {
   return a;
 };
 
+const generateNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 export const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 export const generateGcdRound = () => {
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = generateNumber(1, 100);
+  const num2 = generateNumber(1, 100);
   const correctAnswer = gcd(num1, num2);
   return { question: `${num1} ${num2}`, correctAnswer: String(correctAnswer) };
 };

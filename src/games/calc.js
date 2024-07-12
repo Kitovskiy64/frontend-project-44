@@ -1,8 +1,10 @@
+const generateNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 export const gameDescription = 'What is the result of the expression?';
 
 export const generateCalcRound = () => {
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = generateNumber(1, 100);
+  const num2 = generateNumber(1, 100);
   const operations = ['+', '-', '*'];
   const operation = operations[Math.floor(Math.random() * operations.length)];
   let correctAnswer;
