@@ -1,4 +1,4 @@
-const generateNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { generateNumber } from '../cli.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
@@ -6,7 +6,7 @@ export const generateCalcRound = () => {
   const num1 = generateNumber(1, 100);
   const num2 = generateNumber(1, 100);
   const operations = ['+', '-', '*'];
-  const operation = operations[Math.floor(Math.random() * operations.length)];
+  const operation = operations[generateNumber(0, operations.length - 1)];
   let correctAnswer;
 
   switch (operation) {

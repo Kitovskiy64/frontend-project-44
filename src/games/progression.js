@@ -1,12 +1,23 @@
+import { generateNumber } from '../cli.js';
+
 export const gameDescription = 'What number is missing in the progression?';
 
+const progressionLength = 10;
+
+const getQuestion = (first, step, hiddenNumberIndex) => {
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(first + i * step);
+  }
+  const correctAnswer = String(progression[hiddenNumberIndex]);
+  progression[hiddenNumberIndex] = '..';
+  const question = progression.join(' ');
+  return { question, correctAnswer };
+};
+
 export const generateProgressionRound = () => {
-  const progressionLength = 10;
-  const start = Math.floor(Math.random() * 6) + 1;
-  const step = Math.floor(Math.random() * 20) + 1;
-  const hiddenIndex = Math.floor(Math.random() * progressionLength);
-  const progression = Array.from({ length: progressionLength }, (_, i) => start + i * step);
-  const correctAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = '..';
-  return { question: progression.join(' '), correctAnswer };
+  const first = generateNumber(1, 50);
+  const step = generateNumber(1, 10);
+  const hiddenNumberIndex = generateNumber(0, progressionLength - 1);
+  return getQuestion(first, step, hiddenNumberIndex);
 };
