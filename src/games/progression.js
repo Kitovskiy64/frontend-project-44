@@ -1,4 +1,4 @@
-import { generateNumber } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 export const gameDescription = 'What number is missing in the progression?';
 
@@ -9,15 +9,15 @@ const getQuestion = (first, step, hiddenNumberIndex) => {
   for (let i = 0; i < progressionLength; i += 1) {
     progression.push(first + i * step);
   }
-  const correctAnswer = String(progression[hiddenNumberIndex]);
+  const answer = String(progression[hiddenNumberIndex]);
   progression[hiddenNumberIndex] = '..';
   const question = progression.join(' ');
-  return { question, correctAnswer };
+  return { question, answer };
 };
 
 export const generateProgressionRound = () => {
-  const first = generateNumber(1, 50);
-  const step = generateNumber(1, 10);
-  const hiddenNumberIndex = generateNumber(0, progressionLength - 1);
+  const first = getRandomNumber(1, 50);
+  const step = getRandomNumber(1, 10);
+  const hiddenNumberIndex = getRandomNumber(0, progressionLength - 1);
   return getQuestion(first, step, hiddenNumberIndex);
 };

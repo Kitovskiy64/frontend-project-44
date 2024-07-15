@@ -1,27 +1,27 @@
-import { generateNumber } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
 export const generateCalcRound = () => {
-  const num1 = generateNumber(1, 100);
-  const num2 = generateNumber(1, 100);
+  const num1 = getRandomNumber(1, 100);
+  const num2 = getRandomNumber(1, 100);
   const operations = ['+', '-', '*'];
-  const operation = operations[generateNumber(0, operations.length - 1)];
-  let correctAnswer;
+  const operation = operations[getRandomNumber(0, operations.length - 1)];
+  let answer;
 
   switch (operation) {
     case '+':
-      correctAnswer = num1 + num2;
+      answer = num1 + num2;
       break;
     case '-':
-      correctAnswer = num1 - num2;
+      answer = num1 - num2;
       break;
     case '*':
-      correctAnswer = num1 * num2;
+      answer = num1 * num2;
       break;
     default:
       throw new Error(`Unknown operator: ${operation}`);
   }
 
-  return { question: `${num1} ${operation} ${num2}`, correctAnswer: String(correctAnswer) };
+  return { question: `${num1} ${operation} ${num2}`, answer: String(answer) };
 };
