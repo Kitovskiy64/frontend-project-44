@@ -1,4 +1,4 @@
-import { generateNumber } from '../cli.js';
+import { generateNumber } from '../utils.js';
 
 export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 

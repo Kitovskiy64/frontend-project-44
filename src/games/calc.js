@@ -1,4 +1,4 @@
-import { generateNumber } from '../cli.js';
+import { generateNumber } from '../utils.js';
 
 export const gameDescription = 'What is the result of the expression?';
 
