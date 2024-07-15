@@ -4,20 +4,25 @@ export const gameDescription = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
-const getQuestion = (first, step, hiddenNumberIndex) => {
+const generateProgression = (start, step, length) => {
   const progression = [];
-  for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(first + i * step);
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + i * step);
   }
-  const answer = String(progression[hiddenNumberIndex]);
-  progression[hiddenNumberIndex] = '..';
-  const question = progression.join(' ');
-  return { question, answer };
+  return progression;
 };
 
 export const generateProgressionRound = () => {
-  const first = getRandomNumber(1, 50);
+  const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const hiddenNumberIndex = getRandomNumber(0, progressionLength - 1);
-  return getQuestion(first, step, hiddenNumberIndex);
+
+  const progression = generateProgression(start, step, progressionLength);
+  const answer = String(progression[hiddenNumberIndex]);
+
+  progression[hiddenNumberIndex] = '..';
+
+  const question = progression.join(' ');
+
+  return { question, answer };
 };
